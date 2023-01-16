@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image switcher</title>
+    <style>
+      /* div {
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
+      } */
+      .image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="division"></div> -->
+    <!-- <button class="btn" id="btn1">1</button>
+    <button class="btn" id="btn2">2</button>
+    <button class="btn" id="btn3">3</button> -->
+    <img class="main" src="./1.jpg" alt="" />
+    <div class="selection">
+      <img onclick="change(this.src)" src="./1.jpg" class="image" />
+      <img onclick="change(this.src)" src="./2.jpg" class="image" />
+      <img onclick="change(this.src)" src="./3.jpg" class="image" />
+    </div>
+    <script>
+      //   document.getElementById("btn1").onclick = function () {
+      //     document.getElementById("division").style.backgroundImage =
+      //       "URL(./1.jpg)";
+      //   };
+      //   document.getElementById("btn2").onclick = function () {
+      //     document.getElementById("division").style.backgroundImage =
+      //       " URL(./2.jpg)";
+      //   };
+      //   document.getElementById("btn3").onclick = function () {
+      //     document.getElementById("division").style.backgroundImage =
+      //       " URL(./3.jpg)";
+      //   };
+
+      document.getElementsByClassName("main")[0];
+      function change(good) {
+        document.getElementsByClassName("main")[0].src = good;
+      }
+    </script>
+  </body>
+</html>
